@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Assignment-28</title>
+<style>
+    img{
+        height: 200px;
+        width: 200px;
+        display: block;
+        margin: 130px auto 0px auto;   
+    }
+    div{
+        margin-left: 600px;
+        padding: 5px;
+    }
+    button{
+        font-size: 20px;
+        margin-left: 8px;
+        border-radius: 5px;
+    }
+    #Sum{
+        background-color: goldenrod;
+    }
+    #Win{
+        background-color:rgb(181, 181, 207);
+    }
+    #Man{
+        background-color: #8383c7;
+    }
+</style>
+</head>
+<body>
+<img src="./images/jacket.jpg" id="season">
+<br><br>
+<div>
+<button id="Sum" onclick="Sum()">Summer</button>
+<button id="Win"onclick="Win()">Winter</button>
+<button id="Man" onclick="Man()">Mansoon</button>
+</div>
+<script>
+    const season=document.getElementById('season');
+
+    function Sum(){
+        season.src="./images/sun.jpg";
+    }
+    function Win(){
+        season.src="./images/jacket.jpg";
+    }
+    function Man(){
+        season.src="./images/winter.jpg";
+    }
+</script>
+</body>
+</html>
